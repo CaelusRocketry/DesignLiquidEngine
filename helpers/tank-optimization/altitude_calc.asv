@@ -55,7 +55,7 @@ for index = 1:height(data)
         end
 
         for i = 1:size(v_rocket)
-            if v_rocket(i) > 70/3.281
+            if v_rocket(i) > 100/3.281
                 break;
             end
         end
@@ -93,10 +93,8 @@ nitrous_tank_sizes = nitrous_tank_sizes.';
 altitudes = altitudes.';
 rod_height = rod_height.';
 
-scatter3(ethanol_tank_sizes(:,3), nitrous_tank_sizes(:,3), altitudes(:,3));
-xlabel('Ethanol Tank Size (cu ft)');
-ylabel('Nitrous Tank Size (cu ft)');
-zlabel('Max Altitude (ft)');
-
+scatter3(ethanol_tank_sizes(:,1), nitrous_tank_sizes(:,1), altitudes(:,1));
+xlabel('Ethanol Tank Size (cu ft)')
+ylabel('Nitrous Tank Size (cu ft)')
+zlabel('
 figure();
-plot(rod_height);
